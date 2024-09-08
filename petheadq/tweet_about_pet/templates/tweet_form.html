@@ -1,0 +1,31 @@
+{% extends "layout.html" %}
+
+{% block title %}
+Pets and Pets
+{% endblock %}
+
+{% block content %}
+<div class="container mt-4">
+    <h1 class="text-center">Welcome to Pet's</h1>
+
+    <h2 class="text-center">
+        {% if form.instance.pk %}
+            Edit Tweet
+        {% else %}
+            Create Tweet
+        {% endif %}
+    </h2>
+
+    <form method="POST" enctype="multipart/form-data">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+
+    <!-- Back to tweet list button -->
+    <div class="mt-3">
+        <a href="{% url 'tweet_list' %}" class="btn btn-secondary">Back to Tweet List</a>
+    </div>
+</div>
+{% endblock %}
+
