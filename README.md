@@ -1,6 +1,8 @@
 # outcomes
 # Pet Tweets Project 🐾
 
+![Dog Image](https://raw.githubusercontent.com/ashwani798/Pet-Tweets-Project/main/Dog.webp "Dog Photo")
+
 This project is a Django web application that allows users to post and manage tweets about pets. The app includes a variety of features, demonstrating different aspects of Django and web development:
 
 ## Features:
